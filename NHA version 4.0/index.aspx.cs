@@ -15,7 +15,7 @@ namespace NHA_version_4._0
         private StringBuilder ProjectPost = new StringBuilder();
         private StringBuilder EventPost = new StringBuilder();
         private StringBuilder DepartmentLogo = new StringBuilder();
-        private StringBuilder DepartmentLogoOverLimit = new StringBuilder();
+        private StringBuilder DepartmentLogoMore = new StringBuilder();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -119,20 +119,27 @@ namespace NHA_version_4._0
                 string NameDepartment;
                 if (i >= 12)
                 {
-
+                    if( i == 12){
+                        DepartmentLogoMore.append("<div>"+
+                                                  "    <a class=\"btn btn-primary\" data-toggle=\"collapse\" href=\"#collapseExample\" aria-expanded=\"false\" aria-controls=\"collapseExample\">\n" +
+                                                  "        ดูทั้งหมด\n" +
+                                                  "    </a>\n"+
+                                                  "</div>\n");
+                    }
+                    else
+                    {
+                        if(i == 0)
+                            DepartmentLogo.append(  "<div class=\"collapse\" id=\"collapseExample\">" +
+                                                    "    <div class=\"mt-3\">" +
+                                                    "        <div class=\"row\">)");
+                    }
                 }
                 else
                 {
 
                 }
             }
-
-                                < !--Collapse buttons-- >
-                    <div>
-                        < a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                           ดูทั้งหมด
-                        </a>
-                    </div>
+                    
 
                     <!-- Collapsible element -->
                     <div class="collapse" id="collapseExample">
