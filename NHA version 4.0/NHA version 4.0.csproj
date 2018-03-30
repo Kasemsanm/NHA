@@ -149,7 +149,6 @@
     <Content Include="assets\js\shuffle.js" />
     <Content Include="assets\js\shuffle.min.js" />
     <Content Include="pages\News.aspx" />
-    <Content Include="test.aspx" />
     <Content Include="pages\ViewNews.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -211,13 +210,6 @@
     </Compile>
     <Compile Include="pages\News.aspx.designer.cs">
       <DependentUpon>News.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="test.aspx.cs">
-      <DependentUpon>test.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="test.aspx.designer.cs">
-      <DependentUpon>test.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="pages\ViewNews.aspx.cs">
