@@ -66,7 +66,51 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="pages\AboutNHA.aspx" />
+    <Content Include="assets\font\roboto\Roboto-Bold.eot" />
+    <Content Include="assets\font\roboto\Roboto-Bold.ttf" />
+    <Content Include="assets\font\roboto\Roboto-Bold.woff" />
+    <Content Include="assets\font\roboto\Roboto-Bold.woff2" />
+    <Content Include="assets\font\roboto\Roboto-Light.eot" />
+    <Content Include="assets\font\roboto\Roboto-Light.ttf" />
+    <Content Include="assets\font\roboto\Roboto-Light.woff" />
+    <Content Include="assets\font\roboto\Roboto-Light.woff2" />
+    <Content Include="assets\font\roboto\Roboto-Medium.eot" />
+    <Content Include="assets\font\roboto\Roboto-Medium.ttf" />
+    <Content Include="assets\font\roboto\Roboto-Medium.woff" />
+    <Content Include="assets\font\roboto\Roboto-Medium.woff2" />
+    <Content Include="assets\font\roboto\Roboto-Regular.eot" />
+    <Content Include="assets\font\roboto\Roboto-Regular.ttf" />
+    <Content Include="assets\font\roboto\Roboto-Regular.woff" />
+    <Content Include="assets\font\roboto\Roboto-Regular.woff2" />
+    <Content Include="assets\font\roboto\Roboto-Thin.eot" />
+    <Content Include="assets\font\roboto\Roboto-Thin.ttf" />
+    <Content Include="assets\font\roboto\Roboto-Thin.woff" />
+    <Content Include="assets\font\roboto\Roboto-Thin.woff2" />
+    <Content Include="assets\css\mdb-admin.min.css" />
     <None Include="packages.config" />
+    <Content Include="assets\img\contact\1.png" />
+    <Content Include="assets\img\Logo\1.jpg" />
+    <Content Include="assets\img\Logo\10_new.jpg" />
+    <Content Include="assets\img\Logo\11.jpg" />
+    <Content Include="assets\img\Logo\12.jpg" />
+    <Content Include="assets\img\Logo\13.jpg" />
+    <Content Include="assets\img\Logo\2.jpg" />
+    <Content Include="assets\img\Logo\3.jpg" />
+    <Content Include="assets\img\Logo\4.jpg" />
+    <Content Include="assets\img\Logo\6.jpg" />
+    <Content Include="assets\img\Logo\7.jpg" />
+    <Content Include="assets\img\Logo\8.jpg" />
+    <Content Include="assets\img\Logo\9.jpg" />
+    <Content Include="assets\img\bg1.svg" />
+    <Content Include="assets\js\blog.js" />
+    <Content Include="pages\Downloads.aspx" />
+    <Content Include="pages\FAQ.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="pages\Contact.aspx" />
+    <Content Include="pages\Links.aspx" />
+    <Content Include="siteMaster.Master" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -75,11 +119,116 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\mdb.css" />
+    <Content Include="assets\css\mdb.min.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\img\LOGO.png" />
+    <Content Include="assets\img\Logo1.svg" />
+    <Content Include="assets\img\Logo2.svg" />
+    <Content Include="assets\img\overlays\01.png" />
+    <Content Include="assets\img\overlays\02.png" />
+    <Content Include="assets\img\overlays\03.png" />
+    <Content Include="assets\img\overlays\04.png" />
+    <Content Include="assets\img\overlays\05.png" />
+    <Content Include="assets\img\overlays\06.png" />
+    <Content Include="assets\img\overlays\07.png" />
+    <Content Include="assets\img\overlays\08.png" />
+    <Content Include="assets\img\overlays\09.png" />
+    <Content Include="assets\img\sidenav5.jpg" />
+    <Content Include="assets\img\svg\arrow_left.svg" />
+    <Content Include="assets\img\svg\arrow_right.svg" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\jquery-3.2.1.min.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\mdb.js" />
+    <Content Include="assets\js\mdb.min.js" />
+    <Content Include="assets\js\popper.min.js" />
+    <Content Include="assets\js\shuffle.js" />
+    <Content Include="assets\js\shuffle.min.js" />
+    <Content Include="pages\News.aspx" />
+    <Content Include="test.aspx" />
+    <Content Include="pages\ViewNews.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pages\AboutNHA.aspx.cs">
+      <DependentUpon>AboutNHA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AboutNHA.aspx.designer.cs">
+      <DependentUpon>AboutNHA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Downloads.aspx.cs">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Downloads.aspx.designer.cs">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Links.aspx.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Links.aspx.designer.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="siteMaster.Master.cs">
+      <DependentUpon>siteMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="siteMaster.Master.designer.cs">
+      <DependentUpon>siteMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pages\News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pages\ViewNews.aspx.cs">
+      <DependentUpon>ViewNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ViewNews.aspx.designer.cs">
+      <DependentUpon>ViewNews.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
