@@ -133,7 +133,6 @@ namespace NHA_version_4._0
                            ดูทั้งหมด
                         </a>
                     </div>
-                    <!-- / Collapse buttons -->
 
                     <!-- Collapsible element -->
                     <div class="collapse" id="collapseExample">
