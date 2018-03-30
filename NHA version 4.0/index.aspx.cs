@@ -111,203 +111,47 @@ namespace NHA_version_4._0
                                     "   </div>\n" +
                                     "</div>\n");
             }
-
-            for (int i = 0; i < 50; i++)
+            
+            int LogoCount = 50;
+            for (int i = 0; i < LogoCount; i++)
             {
-                string LinkDepartment;
-                string Image_url;
-                string NameDepartment;
+                string LinkDepartment = "#";
+                string Image_url = "/assets/img/Logo/1.jpg";
+                string NameDepartment = "กระทรวง";
                 if (i >= 12)
-                {
                     if( i == 12){
-                        DepartmentLogoMore.append("<div>"+
+                        DepartmentLogoMore.Append("<div>"+
                                                   "    <a class=\"btn btn-primary\" data-toggle=\"collapse\" href=\"#collapseExample\" aria-expanded=\"false\" aria-controls=\"collapseExample\">\n" +
                                                   "        ดูทั้งหมด\n" +
                                                   "    </a>\n"+
-                                                  "</div>\n");
+                                                  "</div>\n" +
+                                                  "<div class=\"collapse\" id=\"collapseExample\">" +
+                                                  "    <div class=\"mt-3\">" +
+                                                  "        <div class=\"row\">)");
                     }
                     else
-                    {
-                        if(i == 0)
-                            DepartmentLogo.append(  "<div class=\"collapse\" id=\"collapseExample\">" +
-                                                    "    <div class=\"mt-3\">" +
-                                                    "        <div class=\"row\">)");
-                    }
-                }
+                        DepartmentLogoMore.Append(  "<a href=\""+ LinkDepartment +"\" class=\"col-lg-3 col-md-6 d-flex align-items-center justify-content-center\">" +
+                                                    "    <img src = \"" + Image_url + "\" class=\"img-fluid px-4\" alt=\"" + NameDepartment + "\" style=\"max-height: 200px\">" +
+                                                    "</a>" );
+                    if(i == LogoCount-1)
+                        DepartmentLogoMore.Append("</div></div></div>");
                 else
                 {
-
+                    if(i == 0)
+                        DepartmentLogo.Append(  "<div class=\"row\">");
+                    DepartmentLogo.Append(  "<a href=\""+ LinkDepartment +"\" class=\"col-lg-3 col-md-6 d-flex align-items-center justify-content-center\">" +
+                                            "    <img src = \"" + Image_url + "\" class=\"img-fluid px-4\" alt=\"" + NameDepartment + "\" style=\"max-height: 200px\">" +
+                                            "</a>" );
+                    if(i == 11)
+                        DepartmentLogo.Append(  "</div>");
                 }
             }
-                    
-
-                    <!-- Collapsible element -->
-                    <div class="collapse" id="collapseExample">
-                        <div class="mt-3">
-                            <!--Grid row-->
-                            <div class="row">
-
-                                <!--First column-->
-                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                                    <img src = "assets/img/Logo/1.jpg" class="img-fluid px-4" alt="Nike - logo" style="max-height: 200px">
-                                </div>
-                                <!--/First column-->
-
-                                <!--Second column-->
-                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                                    <img src = "assets/img/Logo/2.jpg" class="img-fluid px-4" alt="Amazon - logo" style="max-height: 200px">
-                                </div>
-                                <!--/Second column-->
-
-                                <!--Third column-->
-                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                                    <img src = "assets/img/Logo/3.jpg" class="img-fluid px-4" alt="Sony - logo" style="max-height: 200px">
-                                </div>
-                                <!--/Third column-->
-
-                                <!--Fourth column-->
-                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                                    <img src = "assets/img/Logo/4.jpg" class="img-fluid px-4" alt="Samsung - logo" style="max-height: 200px">
-                                </div>
-                                <!--/Fourth column-->
-
-                                <!--First column-->
-                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                                    <img src = "assets/img/Logo/5.jpg" class="img-fluid px-4" alt="Airbus - logo" style="max-height: 200px">
-                                </div>
-                                <!--/First column-->
-
-                                <!--Second column-->
-                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                                    <img src = "assets/img/Logo/6.jpg" class="img-fluid px-4" alt="Yahoo - logo" style="max-height: 200px">
-                                </div>
-                                <!--/Second column-->
-
-                                <!--Third column-->
-                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                                    <img src = "assets/img/Logo/7.jpg" class="img-fluid px-4" alt="Deloitte - logo" style="max-height: 200px">
-                                </div>
-                                <!--/Third column-->
-
-                                <!--Fourth column-->
-                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                                    <img src = "assets/img/Logo/8.jpg" class="img-fluid px-4" alt="GE - logo" style="max-height: 200px">
-                                </div>
-                                <!--/Fourth column-->
-
-                                <!--First column-->
-                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                                    <img src = "assets/img/Logo/9.jpg" class="img-fluid px-4" alt="KPMG - logo" style="max-height: 200px">
-                                </div>
-                                <!--/First column-->
-
-                                <!--Second column-->
-                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                                    <img src = "assets/img/Logo/10.jpg" class="img-fluid px-4" alt="Unity - logo" style="max-height: 200px">
-                                </div>
-                                <!--/Second column-->
-
-                                <!--Third column-->
-                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                                    <img src = "assets/img/Logo/11.jpg" class="img-fluid px-4" alt="Ikea - logo" style="max-height: 200px">
-                                </div>
-                                <!--/Third column-->
-
-                                <!--Fourth column-->
-                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                                    <img src = "assets/img/Logo/12.jpg" class="img-fluid px-4" alt="Aegon - logo" style="max-height: 200px">
-                                </div>
-                                <!--/Fourth column-->
-
-                            </div>
-                            <!--/Grid row-->
-                        </div>
-                    </div>
-                    <!-- / Collapsible element -->
-
-                    <!--Grid row-->
-                    <div class="row">
-
-                        <!--First column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                            <img src = "assets/img/Logo/1.jpg" class="img-fluid px-4" alt="Nike - logo" style="max-height: 200px">
-                        </div>
-                        <!--/First column-->
-
-                        <!--Second column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                            <img src = "assets/img/Logo/2.jpg" class="img-fluid px-4" alt="Amazon - logo" style="max-height: 200px">
-                        </div>
-                        <!--/Second column-->
-
-                        <!--Third column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                            <img src = "assets/img/Logo/3.jpg" class="img-fluid px-4" alt="Sony - logo" style="max-height: 200px">
-                        </div>
-                        <!--/Third column-->
-
-                        <!--Fourth column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                            <img src = "assets/img/Logo/4.jpg" class="img-fluid px-4" alt="Samsung - logo" style="max-height: 200px">
-                        </div>
-                        <!--/Fourth column-->
-
-                        <!--First column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                            <img src = "assets/img/Logo/5.jpg" class="img-fluid px-4" alt="Airbus - logo" style="max-height: 200px">
-                        </div>
-                        <!--/First column-->
-
-                        <!--Second column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                            <img src = "assets/img/Logo/6.jpg" class="img-fluid px-4" alt="Yahoo - logo" style="max-height: 200px">
-                        </div>
-                        <!--/Second column-->
-
-                        <!--Third column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                            <img src = "assets/img/Logo/7.jpg" class="img-fluid px-4" alt="Deloitte - logo" style="max-height: 200px">
-                        </div>
-                        <!--/Third column-->
-
-                        <!--Fourth column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                            <img src = "assets/img/Logo/8.jpg" class="img-fluid px-4" alt="GE - logo" style="max-height: 200px">
-                        </div>
-                        <!--/Fourth column-->
-
-                        <!--First column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                            <img src = "assets/img/Logo/9.jpg" class="img-fluid px-4" alt="KPMG - logo" style="max-height: 200px">
-                        </div>
-                        <!--/First column-->
-
-                        <!--Second column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                            <img src = "assets/img/Logo/10.jpg" class="img-fluid px-4" alt="Unity - logo" style="max-height: 200px">
-                        </div>
-                        <!--/Second column-->
-
-                        <!--Third column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                            <img src = "assets/img/Logo/11.jpg" class="img-fluid px-4" alt="Ikea - logo" style="max-height: 200px">
-                        </div>
-                        <!--/Third column-->
-
-                        <!--Fourth column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                            <img src = "assets/img/Logo/12.jpg" class="img-fluid px-4" alt="Aegon - logo" style="max-height: 200px">
-                        </div>
-                        <!--/Fourth column-->
-
-                    </div>
-                    <!--/Grid row-->
-
-
             news.Controls.Add(new Literal { Text = newsPost.ToString() });
             Research.Controls.Add(new Literal { Text = ResearchPost.ToString() });
             Project.Controls.Add(new Literal { Text = ProjectPost.ToString() });
             Events.Controls.Add(new Literal { Text = EventPost.ToString() });
+            Department.Controls.Add(new Literal { Text = DepartmentLogo.ToString() });
+            DepartmentMore.Controls.Add(new Literal { Text = DepartmentLogoMore.ToString() });
         }
     }
 }

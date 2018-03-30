@@ -4,7 +4,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <!--Main layout-->
     <main>
-
         <!--Intro-->
         <section>
             <div class="container-fluid">
@@ -18,39 +17,25 @@
             </div>
         </section>
         <!--/Intro-->
-
-        <!--Blog section-->
+        <!--Content section-->
         <section>
             <div class="container-fluid grey lighten-4">
                 <hr class="my-5">
                 <div class="container">
-                    <!--Blog-->
                     <div class="row mt-5 pt-3">
-
                         <!--Main listing-->
                         <div class="col-lg-9 col-12 mx-lg-0">
-
-                            <!--Section: Blog v.3-->
                             <section class="section extra-margins pb-3 text-center text-lg-left">
-
-                                <!--Grid row-->
+                                <!--Slide Content-->
                                 <div class="row">
-
-                                    <!--Grid column-->
                                     <div class="col-md-12">
-                                        <!--Card-->
                                         <div class="card">
-                                        
-                                            <!--Carousel Wrapper-->
                                             <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-                                                <!--Indicators-->
                                                 <ol class="carousel-indicators">
                                                     <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
                                                     <li data-target="#carousel-example-2" data-slide-to="1"></li>
                                                     <li data-target="#carousel-example-2" data-slide-to="2"></li>
                                                 </ol>
-                                                <!--/.Indicators-->
-                                                <!--Slides-->
                                                 <div class="carousel-inner" role="listbox">
                                                     <div class="carousel-item active">
                                                         <div class="view">
@@ -63,7 +48,6 @@
                                                         </div>
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <!--Mask color-->
                                                         <div class="view">
                                                             <img class="d-block w-100" src="https://www.amazingthailand.go.th/images/001/a55.jpg" alt="Second slide">
                                                             <div class="mask rgba-black-strong"></div>
@@ -74,7 +58,6 @@
                                                         </div>
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <!--Mask color-->
                                                         <div class="view">
                                                             <img class="d-block w-100" src="https://www.amazingthailand.go.th/images/001/logox-03.jpg" alt="Third slide">
                                                             <div class="mask rgba-black-slight"></div>
@@ -85,8 +68,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!--/.Slides-->
-                                                <!--Controls-->
                                                 <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
                                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                                     <span class="sr-only">Previous</span>
@@ -95,28 +76,15 @@
                                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                                     <span class="sr-only">Next</span>
                                                 </a>
-                                                <!--/.Controls-->
                                             </div>
-                                            <!--/.Carousel Wrapper-->
-                
                                         </div>
-                                        <!--/.Card-->
-
                                     </div>
-                                    <!--Grid column-->
-
                                 </div>
-                                <!--/Grid row-->
-
-                                <!--Grid row-->
+                                <!--/Slide Content-->
                                 <div class="row" style="margin-top:-60px">
-
-                                    <!--Grid column-->
+                                    <!--News Content-->
                                     <div class="col-md-12">
-                                        <!--Card-->
                                         <div class="card card-cascade cascading-admin-card user-card">
-
-                                            <!--Card Data-->
                                             <div class="d-flex">
                                                 <div class="admin-up justify-content-start">
                                                     <i class="fa fa-newspaper-o danger-color py-4"></i>
@@ -126,32 +94,19 @@
                                                 </div>
                                                 <a class="btn btn-outline-primary waves-effect ml-auto mt-3 mr-3" href="News.aspx">ดูทั้งหมด</a>
                                             </div>                                        
-                                            <!--/.Card Data-->
-                                            <!--Card content-->
                                             <div class="card-body">
                                                 <div class="row">
                                                     <asp:PlaceHolder ID="news" runat="server"></asp:PlaceHolder>
                                                 </div>
                                             </div>
-                                            <!--/.Card content-->
-
                                         </div>
-                                        <!--/.Card-->
                                     </div>
-                                    <!--Grid column-->
-
+                                    <!--News Content-->
                                 </div>
-                                <!--/Grid row-->
-
-                                <!--Grid row-->
                                 <div class="row text-center">
-
-                                    <!--Grid column-->
+                                    <!--Research Content-->
                                     <div class="col-md-6" style="margin-top:-60px">
-                                        <!--Card-->
                                         <div class="card card-cascade cascading-admin-card user-card">
-
-                                            <!--Card Data-->
                                             <div class="d-flex">
                                                 <div class="admin-up justify-content-start">
                                                     <i class="fa fa-file-text-o primary-color py-4"></i>
@@ -161,28 +116,18 @@
                                                 </div>
                                                 <a class="btn btn-outline-primary waves-effect ml-auto mt-3 mr-3" href="#">ดูทั้งหมด</a>
                                             </div>                                        
-                                            <!--/.Card Data-->
-                                            <!--Card content-->
                                             <div class="card-body">
                                                 <div class="row">
                                                     <asp:PlaceHolder ID="Research" runat="server"></asp:PlaceHolder>                                                   
                                                 </div>
                                             </div>
-                                            <!--/.Card content-->
-
                                         </div>
-                                        <!--/.Card-->
-
                                     </div>
-                                    <!--Grid column-->
+                                    <!--Research Content-->
 
-                                    <!--Grid column-->
+                                    <!--Project Content-->
                                     <div class="col-md-6" style="margin-top:-60px">
-
-                                        <!--Card-->
                                         <div class="card card-cascade cascading-admin-card user-card">
-
-                                            <!--Card Data-->
                                             <div class="d-flex">
                                                 <div class="admin-up justify-content-start">
                                                     <i class="fa fa-home success-color py-4"></i>
@@ -192,34 +137,23 @@
                                                 </div>
                                                 <a class="btn btn-outline-primary waves-effect ml-auto mt-3 mr-3" href="#">ดูทั้งหมด</a>
                                             </div>                                        
-                                            <!--/.Card Data-->
-                                            <!--Card content-->
                                             <div class="card-body">
                                                 <div class="row">
                                                     <asp:PlaceHolder ID="Project" runat="server"></asp:PlaceHolder>
                                                 </div>
                                             </div>
-                                            <!--/.Card content-->
-
                                         </div>
-                                        <!--/.Card-->
-
                                     </div>
-                                    <!--Grid column-->
-
+                                    <!--Project Content-->
                                 </div>
-                                <!--/Grid row-->
-
-                                <!--Grid row-->
+                                <!--Slide Event-->
                                 <div class="row">
-
-                                    <!--Grid column-->
                                     <div class="col-md-12" style="margin-top:-60px">
 
-                                        <!--Card-->
+                                        
                                         <div class="card card-cascade cascading-admin-card user-card">
 
-                                            <!--Card Data-->
+                                            
                                             <div class="d-flex">
                                                 <div class="admin-up justify-content-start">
                                                     <i class="fa fa-american-sign-language-interpreting warning-color py-4"></i>
@@ -229,12 +163,12 @@
                                                 </div>
                                                 <button type="button" class="btn btn-outline-primary waves-effect ml-auto mt-3 mr-3">ดูทั้งหมด</button>
                                             </div>                                        
-                                            <!--/.Card Data-->
-                                            <!--Card content-->
+                                            
+                                            
                                             <div class="card-body">
-                                                <!--Carousel Wrapper-->
+                                                
                                                 <div id="carousel-event" class="carousel slide carousel-fade" data-ride="carousel">
-                                                    <!--Indicators-->
+                                                    
                                                     <ol class="carousel-indicators">
                                                         <li data-target="#carousel-event" data-slide-to="0" class="active"></li>
                                                         <li data-target="#carousel-event" data-slide-to="1"></li>
@@ -243,13 +177,13 @@
                                                         <li data-target="#carousel-event" data-slide-to="4"></li>
                                                         <li data-target="#carousel-event" data-slide-to="5"></li>
                                                     </ol>
-                                                    <!--/.Indicators-->
-                                                    <!--Slides-->
+                                                    
+                                                    
                                                     <div class="carousel-inner" role="listbox">
                                                         <asp:PlaceHolder ID="Events" runat="server"></asp:PlaceHolder>
                                                     </div>
-                                                    <!--/.Slides-->
-                                                    <!--Controls-->
+                                                    
+                                                    
                                                     <a class="carousel-control-prev" href="#carousel-event" role="button" data-slide="prev">
                                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                                         <span class="sr-only">Previous</span>
@@ -258,41 +192,30 @@
                                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                                         <span class="sr-only">Next</span>
                                                     </a>
-                                                    <!--/.Controls-->
+                                                    
                                                 </div>
-                                                <!--/.Carousel Wrapper-->
+                                                
                 
                                             </div>
-                                            <!--/.Card content-->
+                                            
 
                                         </div>
-                                        <!--/.Card-->
+                                        
 
                                     </div>
-                                    <!--Grid column-->
-
                                 </div>
-                                <!--/Grid row-->
-
+                                <!--/Slide Event-->
                             </section>
-                            <!--Section: Blog v.3-->
-
                         </div>
                         <!--Main listing-->
 
                         <!--Sidebar-->
                         <div class="col-lg-3 col-12 ">
                             <div class="section mb-3">
-                                <!--Card-->
                                 <div class="card card-cascade narrower panel-cascade">
-
-                                    <!--Card image-->
                                     <div class="view py-3 primary-color-dark">
                                         <h5 class="mb-0">Menu</h5>
                                     </div>
-                                    <!--/Card image-->
-
-                                    <!--Card content-->
                                     <div class="card-body text-center">
                                         <div class="list-group mb-3">
                                             <a href="https://mdbootstrap.com/components/buttons/" class="list-group-item d-flex justify-content-between">
@@ -321,17 +244,10 @@
                                             </a>                                        
                                         </div>
                                     </div>
-                                    <!--/.Card content-->
-
                                 </div>
-                                <!--Card-->
                             </div>
-
                             <div class="section mb-3 mt-3">
-                                <!--Card-->
                                 <div class="card card-cascade narrower panel-cascade">
-
-                                    <!--Card content-->
                                     <div class="card-body text-center">
                                         <div class="list-group mb-3">
                                             <a href="https://mdbootstrap.com/components/buttons/" class="list-group-item d-flex justify-content-between">
@@ -378,38 +294,24 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <!--/.Card content-->
-
                                 </div>
-                                <!--Card-->
                             </div>
-
-                            <!--Card-->
                             <div class="card">
-
-                                <!--Card image-->
                                 <div class="view overlay flex-center pt-4">
                                     <img src="http://www.manager.co.th/asp-bin/Image.aspx?ID=2415040" class="img-fluid" alt="">
                                     <a>
                                         <div class="mask rgba-white-slight"></div>
                                     </a>
                                 </div>
-                                <!--/.Card image-->
-
-                                <!--Card content-->
                                 <div class="card-body">
-                                    <!--Title-->
                                     <h5 class="card-title dark-grey-text text-center grey lighten-4 py-2">
                                         <strong>Anna Doe</strong>
                                     </h5>
-
-                                    <!--Description-->
                                     <p class="mt-3 dark-grey-text font-small text-center">
                                         <em>Hello, I'm Anna. I love travel around the world and take photos of landscapes and local
                                             people.
                                         </em>
                                     </p>
-
                                     <ul class="list-unstyled list-inline-item circle-icons list-unstyled flex-center">
                                         <!--Facebook-->
                                         <li>
@@ -431,30 +333,16 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <!--/.Card content-->
-
                             </div>
-                            <!--/.Card-->
-
-                            <!--Featured posts-->
                             <section class="mb-5">
-
-                                <!--Grid row-->
                                 <div class="row mt-3">
-                                    <!--Grid column-->
                                     <div class="col-md-12">
-
-                                        <!--Carousel Wrapper-->
                                         <div id="carousel-example-4" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
-                                            <!--Indicators-->
                                             <ol class="carousel-indicators">
                                                 <li data-target="#carousel-example-4" data-slide-to="0" class="active"></li>
                                                 <li data-target="#carousel-example-4" data-slide-to="1"></li>
                                                 <li data-target="#carousel-example-4" data-slide-to="2"></li>
                                             </ol>
-                                            <!--Indicators-->
-
-                                            <!--Slides-->
                                             <div class="carousel-inner" role="listbox">
                                                 <!--First slide-->
                                                 <div class="carousel-item active">
@@ -549,20 +437,14 @@
                                 <!--Grid row-->
 
                             </section>
-                            <!--Featured posts-->
-
                         </div>
-                        <!--Sidebar-->
-
                     </div>
-                    <!--Blog-->
                 </div>
-
             </div>
         </section>
-        <!--Blog section-->
+        <!--Content section-->
 
-        <!--Latest posts-->
+        <!--Dapartment-->
         <section>
             <div class="container-fluid white mb-0 pb-0">
                 <hr class="mt-0">
@@ -570,15 +452,12 @@
                     <br>
                     <h4>หน่วยงานที่เกี่ยวข้อง</h4>
                     <hr>
-
-                    <asp:PlaceHolder ID="DepartmentOverLimit" runat="server"></asp:PlaceHolder>
+                    <asp:PlaceHolder ID="DepartmentMore" runat="server"></asp:PlaceHolder>
                     <asp:PlaceHolder ID="Department" runat="server"></asp:PlaceHolder>
-
                 </div>
             </div>
-
         </section>
-        <!--/Latest posts-->
+        <!--/Dapartment-->
 
     </main>
     <!--Main layout-->
